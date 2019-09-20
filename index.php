@@ -1,5 +1,17 @@
 <?php
-$name = 'Ayr';
+
+// ARRAYS / VECTORS 
+
+$clase =  [
+    'Ayr',
+    'Sergi',
+    'Joan',
+    'Carlos'];
+    
+
+
+
+//$name = 'Ayr';
 
 //normalment se necesitaria un controlador en poques linees.
 //require 'model.php'
