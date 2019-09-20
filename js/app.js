@@ -43,7 +43,7 @@ document.body.innerHTML = template
 // pero es pot borrar. sempre que es pugi fer el npm per instalarlo altra vegada.
 //pacaje-loc tambe lo mateix.
 
-
+//manifest definira el nom i dependencies del projecte.
 
 //import i export
 
