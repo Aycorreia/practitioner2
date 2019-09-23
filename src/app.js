@@ -1,10 +1,13 @@
+//recordar de eliminar comentaris innecesaris, fer copia cuan es envie!!!
+
+
 //console.log('Hola mon')
 
 //chibatar lo que fa aquesta cosa!
 //document lo que fa es carregar el document html per a modificarlo en js?
-console.log(document);
+//console.log(document);
 
-console.log(document.body);
+//console.log(document.body);
 
 //carrega la pagina i inserta la linea!
 //aixo es obsolet sin embargo.
@@ -27,10 +30,10 @@ const name = 'Ayr'
 //per a indicar moduls propis cal fer / per a tot el path, o . per a relatius.
 import greeting from '.js/templates/greeting.js'
 
-console.log(greeting);
+//console.log(greeting);
 
 
-document.body.innerHTML = template
+document.body.innerHTML = greeting
 
 //gestor de depencencies! sino cal importarles tot al document...
 
