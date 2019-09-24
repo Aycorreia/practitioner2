@@ -4,17 +4,12 @@
 
 
 //model
-require 'models/llista_classe.php'
+require 'models/llista_classe.php';
 //arrays associatius
 //una llista
 //objecte
 
 //$name = 'Ayr';
-$person = [
-    'fullname' => 'ayram penalver',
-    'name' => 'ayram',
-    'surname' => 'surname'
-]
 
 
 
