@@ -9,7 +9,7 @@
 <body>
     
     <?php
-    foreach ($clase as $person) {
+    foreach ($classe as $person) {
         echo "Hola $person";
     }
     ?>

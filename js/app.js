@@ -90,14 +90,36 @@
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var name = 'Ayr'; //import greeting from './templates/greeting'
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _templates_greeting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/greeting */ "./src/templates/greeting.js");
+//import greeting from './templates/greeting'
+//aixo defineix una dependencia!
+ //const greeting = `<h1> hola ${name}!</h1>`
+
+document.body.innerHTML = _templates_greeting__WEBPACK_IMPORTED_MODULE_0__["greeting"];
+
+/***/ }),
+
+/***/ "./src/templates/greeting.js":
+/*!***********************************!*\
+  !*** ./src/templates/greeting.js ***!
+  \***********************************/
+/*! exports provided: greeting */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "greeting", function() { return greeting; });
+//aqui la plantilla
+//const greeting 
+var name = 'Ayr'; //default es per a objectes. aixo no es un objecte
 
 var greeting = "<h1>".concat(name, "!</h1>");
-console.log(greeting);
-document.body.innerHTML = greeting;
+
 
 /***/ }),
 
