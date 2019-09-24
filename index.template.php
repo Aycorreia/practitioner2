@@ -7,11 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <?php
-    foreach ($classe as $person) {
-        echo "Hola $person";
-    }
-    ?>
+
+
+    <h1><?= $person ['$fullname'] ?></h1>
+    <ul>
+        <li>Nom: <?= $person ['$name'] ?></li>
+        <li>Cognoms: <?= $person ['$surname'] ?></li>
+        <li>Email: <?= $person ['$email'] ?></li>
+    </ul>
+
 </body>
 </html>
