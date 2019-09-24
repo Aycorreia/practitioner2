@@ -4,7 +4,7 @@
 
 
 //model
-require 'models/llista_classe.php';
+require 'models/task.php';
 //arrays associatius
 //una llista
 //objecte
@@ -17,6 +17,8 @@ require 'models/llista_classe.php';
 //require 'model.php'
 
 //include i require son peero require peta si el fitxer no existeis. Include no peta.
+
+var_dump($task);
 //VISTA
 
 require 'index.template.php';

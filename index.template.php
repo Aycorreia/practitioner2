@@ -9,11 +9,14 @@
 <body>
 
 
-    <h1><?= $person ['$fullname'] ?></h1>
+    <h1><?= $task ['$fullname'] ?></h1>
     <ul>
-        <li>Nom: <?= $person ['$name'] ?></li>
-        <li>Cognoms: <?= $person ['$surname'] ?></li>
-        <li>Email: <?= $person ['$email'] ?></li>
+        <li>Descripcio: <?= $task ['descripcio'] ?></li>
+        <li>Completada: 
+            
+        <?= $task['completed'] ? 'Si' : 'No';?>
+
+</li>
     </ul>
 
 </body>
