@@ -10,6 +10,8 @@ require 'helpers.php';
 
 //model
 require 'models/task.php';
+//dd($task);
+dump($task);
 //arrays associatius
 //una llista
 //objecte

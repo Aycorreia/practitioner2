@@ -86,6 +86,39 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./helpers.js":
+/*!********************!*\
+  !*** ./helpers.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function log(value) {
+  console.log(value);
+}
+
+function saludar() {
+  console.log('helo');
+}
+
+function suma(x, y) {
+  return x + y;
+} // const log= function log(value){
+//     console.log(value); 
+//    }
+//exportar un nom.
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  log: log,
+  saludar: saludar,
+  suma: suma
+});
+
+/***/ }),
+
 /***/ "./src/app.js":
 /*!********************!*\
   !*** ./src/app.js ***!
@@ -95,12 +128,21 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _templates_task__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/task */ "./src/templates/task.js");
+/* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers.js */ "./helpers.js");
+/* harmony import */ var _templates_task__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./templates/task */ "./src/templates/task.js");
+ //tambe altenativament. importar variables individual.
+//import {suma,log,saluda} from '../helpers.js'
+//cridar llavors es nmes const resultat=suma(1,2)
 //import greeting from './templates/greeting'
 //aixo defineix una dependencia!
+
  //const greeting = `<h1> hola ${name}!</h1>`
 
-document.body.innerHTML = _templates_task__WEBPACK_IMPORTED_MODULE_0__["template"];
+document.body.innerHTML = _templates_task__WEBPACK_IMPORTED_MODULE_1__["template"];
+_helpers_js__WEBPACK_IMPORTED_MODULE_0__["default"].log('prova');
+_helpers_js__WEBPACK_IMPORTED_MODULE_0__["default"].saludar();
+var resultat = _helpers_js__WEBPACK_IMPORTED_MODULE_0__["default"].suma(1, 2);
+console.log(resultat);
 
 /***/ }),
 

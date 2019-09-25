@@ -9,7 +9,7 @@
 <body>
 
 
-    <h1><?= $task ['$fullname'] ?></h1>
+    <h1><?= $task ['$name'] ?></h1>
     <ul>
         <li>Descripcio: <?= $task ['descripcio'] ?></li>
         <li>Completada: 

@@ -1,8 +1,9 @@
 {
     "name": "practitioner",
     "devDependencies": {
-        "laravel-mix": "^5.0.0",
-        "cross-env": "^6.0.0"
+        "cross-env": "^6.0.0",
+        "jest": "^24.9.0",
+        "laravel-mix": "^5.0.0"
     },
     "scripts": {
         "dev-antic": "babel src -d js",

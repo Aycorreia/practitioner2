@@ -1,6 +1,6 @@
 <?php
 
-//dry -dont repeat yourself vs wet -write everything twice
+
 function dump($var){
     echo '<pre>';
     die(var_dump($var));
@@ -12,5 +12,6 @@ function dump($var){
     echo '</pre>';
 } */
 function dd ($var){
+    //dry -dont repeat yourself vs wet -write everything twice
     die(dump($var));
 }
