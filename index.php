@@ -2,6 +2,11 @@
 
 // ARRAYS / VECTORS 
 
+// FUNCIONS GLOBALS / HELPERS
+require 'helpers.php';
+
+//dump();
+//dd();
 
 //model
 require 'models/task.php';
@@ -18,7 +23,8 @@ require 'models/task.php';
 
 //include i require son peero require peta si el fitxer no existeis. Include no peta.
 
-var_dump($task);
+//var_dump($task);
+
 //VISTA
 
 require 'index.template.php';

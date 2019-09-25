@@ -2,8 +2,9 @@
 $person = [
         'fullname' => 'ayram penalver',
         'name' => 'ayram',
-        'surname' => 'surname'
-    ]
+        'surname' => 'surname',
+        'email' => 'apenalver@iesebre.com'
+];
 
 // objectes ->Java plain old object ->pojo, popo. No te inteligencia, no te funcions.
 // std class
@@ -16,5 +17,3 @@ $person = [
     //'fullname' => 'Ayramptateta'
 //]
 
-
- ?>

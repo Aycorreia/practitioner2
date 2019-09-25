@@ -95,30 +95,54 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _templates_greeting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/greeting */ "./src/templates/greeting.js");
+/* harmony import */ var _templates_task__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/task */ "./src/templates/task.js");
 //import greeting from './templates/greeting'
 //aixo defineix una dependencia!
  //const greeting = `<h1> hola ${name}!</h1>`
 
-document.body.innerHTML = _templates_greeting__WEBPACK_IMPORTED_MODULE_0__["greeting"];
+document.body.innerHTML = _templates_task__WEBPACK_IMPORTED_MODULE_0__["template"];
 
 /***/ }),
 
-/***/ "./src/templates/greeting.js":
-/*!***********************************!*\
-  !*** ./src/templates/greeting.js ***!
-  \***********************************/
-/*! exports provided: greeting */
+/***/ "./src/model.js":
+/*!**********************!*\
+  !*** ./src/model.js ***!
+  \**********************/
+/*! exports provided: name, task */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "greeting", function() { return greeting; });
-//aqui la plantilla
-//const greeting 
-var name = 'Ayr'; //default es per a objectes. aixo no es un objecte
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "task", function() { return task; });
+var name = 'Ayr';
+var task = {
+  name: 'Comprar llet',
+  description: 'al lidl',
+  completed: true
+};
 
-var greeting = "<h1>".concat(name, "!</h1>");
+
+/***/ }),
+
+/***/ "./src/templates/task.js":
+/*!*******************************!*\
+  !*** ./src/templates/task.js ***!
+  \*******************************/
+/*! exports provided: template */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "template", function() { return template; });
+/* harmony import */ var _model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../model */ "./src/model.js");
+//import greeting from './templates/greeting'
+//aixo defineix una dependencia!
+ //import { unlink } from 'fs'
+//const greeting = `<h1> hola ${name}!</h1>`
+
+var template = "\n<h1>".concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].name, "</h1>\n<ul>\n    <li>Descripci\xF3: ").concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].description, "</li>\n    <li>Completada: ").concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].completed, "</li>\n </ul>   \n"); //document.body.innerHTML = template
+
 
 
 /***/ }),
