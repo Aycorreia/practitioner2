@@ -43,3 +43,12 @@ require 'index.template.php';
 
 // SOLID -> S O L I D
 // O -> Open-Closed -> Open to Extension to Modification
+
+
+
+
+
+
+//front controller fc
+
+
