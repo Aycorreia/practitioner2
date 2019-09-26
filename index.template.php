@@ -9,12 +9,15 @@
 <body>
 
 
-    <h1><?= $task ['name'] ?></h1>
+    <h1><?= //$task ['name']
+        $task->name ?></h1>
     <ul>
-        <li>Descripcio: <?= $task ['description'] ?></li>
+        <li>Descripcio: <?= //$task ['description'] 
+        $task->description ?></li>
         <li>Completada: 
             
-        <?= $task['completed'] ? 'Si' : 'No';?>
+        <?= //$task['completed'] ? 'Si' : 'No';
+        $task->completed ? 'Si' : 'No' ?>
 
         </li>
     </ul>
