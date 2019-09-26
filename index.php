@@ -10,11 +10,13 @@ require 'helpers.php';
 //dump();
 //dd();
 
-require 'Task.php';
+/* require 'Task.php';
 
 require 'database/Connection.php';
 
-require 'database/QueryBuilder.php';
+require 'database/QueryBuilder.php'; */
+
+require 'vendor/autoload.php';
 
 //model
 require 'models/task.php';
