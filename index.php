@@ -1,5 +1,7 @@
 <?php
 
+//Aquest es el fixer controlador
+
 // ARRAYS / VECTORS 
 
 // FUNCIONS GLOBALS / HELPERS
@@ -11,7 +13,7 @@ require 'helpers.php';
 //model
 require 'models/task.php';
 //dd($task);
-dump($task);
+//dump($task);
 //arrays associatius
 //una llista
 //objecte
@@ -30,3 +32,6 @@ dump($task);
 //VISTA
 
 require 'index.template.php';
+
+// SOLID -> S O L I D
+// O -> Open-Closed -> Open to Extension to Modification
